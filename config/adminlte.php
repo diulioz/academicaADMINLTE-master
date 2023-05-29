@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Sistema Academico </b>',
+    'logo' => '<b>Ejemplo Sistema Academico </b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -345,6 +345,11 @@ return [
         [
             'text' => 'Calificaciones',
             'url'  => '/regnotas/listado',
+            'icon' => 'fas fa-fw fa-book',
+        ],
+        [
+            'text' => 'Becas',
+            'url'  => '/estudiantesb/listado',
             'icon' => 'fas fa-fw fa-book',
         ],
 
