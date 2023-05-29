@@ -349,7 +349,7 @@ return [
         ],
         [
             'text' => 'Becas',
-            'url'  => '/estudiantesb/listado',
+            'url'  => '',
             'icon' => 'fas fa-fw fa-book',
         ],
 
