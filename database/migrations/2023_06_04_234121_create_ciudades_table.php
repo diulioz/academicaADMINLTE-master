@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('departamentos', function (Blueprint $table) {
-            $table->char('codDepto',2);
-            $table->char('nomDepto',30);
-            $table->primary('codDepto');//llave primaria
+        Schema::create('ciudades', function (Blueprint $table) {
+            $table->char('codCiudad',5);
+            $table->char('nomCiudad',20);
+            $table->char('departamento',2);
+            $table->primary('codCiudad');//primaria
+            $table->foreign('departamento')->references('codDepto')->on('departamentos');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('departamentos');
+        Schema::dropIfExists('ciudades');
     }
 };

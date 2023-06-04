@@ -17,7 +17,7 @@ return new class extends Migration
             $table->char('codPrograma',2);
             $table->char('nomPrograma',30);
             $table->char('facultad',2); //esta es una llave foranea
-            $table->primary('codPrograma');
+            $table->primary('codPrograma');//esta es primaria
             $table->foreign('facultad')->references('codFacultad')->on('facultades'); //on facultades es el nombre de la tabla facultades
             $table->timestamps();
         });

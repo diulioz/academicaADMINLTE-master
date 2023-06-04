@@ -18,6 +18,7 @@ return new class extends Migration
             $table->char('nomBarrio',30);
             $table->integer('estBarrio');
             $table->integer('comuna');
+            $table->primary('codBarrio');//llave primaria de barrio
             $table->timestamps();
         });
     }
