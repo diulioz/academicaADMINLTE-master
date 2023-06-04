@@ -14,7 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('materias', function (Blueprint $table) {
-            $table->id();
+            $table->char('codMateria',2);
+            $table->char('nomMateria',20);
+            $table->integer('cremateria');
+            $table->primary('codMateria');
             $table->timestamps();
         });
     }
