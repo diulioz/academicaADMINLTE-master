@@ -17,7 +17,7 @@ return new class extends Migration
             $table->char('codDecano',2);
             $table->char('nomDecano',40);
             $table->char('facultad',2); //esta es una llave foranea
-            $tanle->primary('codDecano');//aqui se define llave primaria
+            $table->primary('codDecano');//aqui se define llave primaria
             $table->foreign('facultad')->references('codFacultad')->on('facultades'); //on facultades es el nombre de la tabla facultades
             $table->timestamps();
         });
