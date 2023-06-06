@@ -26,6 +26,7 @@ Route::get('/', function () {
 Route::get('/dashboard', [HomeController::class, 'index']);
 Route::get('/facultades/listado', [Facultades::class, 'index'])->name('listadoFac');
 Route::get('/facultades/registrar', [Facultades::class, 'form_registro']);
+Route::get('/facultades/eliminar/{id}', [Facultades::class, 'eliminar'])->name('eliminaFac');
 Route::post('/facultades/registrar', [Facultades::class, 'registrar']);
 Route::get('/programas/listado', [Programas::class, 'index']);
 Route::get('/profesores/listado', [Profesores::class, 'index']);

@@ -23,4 +23,10 @@ class Facultades extends Controller
         $facultad->save();
         return redirect()->route('listadoFac'); //listadoFac es el nombre abreviado del controlador        
     }
+
+    public function eliminar($id){
+        $facultad = Facultad::findOrFail($id); //encuentre el registro cuyo id corresponda al que yo le di aqui
+        $facultad->delete();
+        return redirect()->route('listadoFac');
+    }
 }
