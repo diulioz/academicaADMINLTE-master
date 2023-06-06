@@ -4,8 +4,11 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\support\Facades\DB; //esto siempre debe ir
+use Illuminate\support\Facades\Hash; //esto siempre debe ir
+use Illuminate\support\str; //esto siempre debe ir
 
-class FacultadesSeede extends Seeder
+class FacultadesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -36,5 +39,7 @@ class FacultadesSeede extends Seeder
                 'nomFacultad' => 'Licenciaturas'
             ]
             ];
+
+            DB::table('facultades')->insert($datos);
     }
 }
