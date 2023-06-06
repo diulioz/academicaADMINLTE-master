@@ -7,14 +7,16 @@
 @stop
 
 @section('content')
-    <form>
+    <form action="{{url('facultades/registrar')}}" method="POST">
+    @csrf 
+    //SIEMPRE PONER @csrf es una regla propia del framework al iniciar un formulario
     <div class="mb-3">
         <label for="codigo" class="form-label">Código</label>
-        <input type="number" class="form-control" id="codFacultad" placeholder="Código Facultad" require min='1'>
+        <input type="text" class="form-control" id="codFacultad" name="codFacultad" placeholder="Código Facultad">
     </div>
     <div class="mb-3">
         <label for="nombre" class="form-label">Nombre de Facultad</label>
-        <input type="text" class="form-control" id="nomFacultad" placeholder="Nombre Facultad" require>
+        <input type="text" class="form-control" id="nomFacultad" name="nomFacultad" placeholder="Nombre Facultad">
     </div>
     <button type="submit" class="btn btn-success">Registar</button>
 </form>
