@@ -8,8 +8,7 @@
 
 @section('content')
     <form action="{{url('facultades/registrar')}}" method="POST">
-    @csrf 
-    //SIEMPRE PONER @csrf es una regla propia del framework al iniciar un formulario
+    @csrf <!-- SIEMPRE PONER @csrf es una regla propia del framework al iniciar un formulario -->
     <div class="mb-3">
         <label for="codigo" class="form-label">Código</label>
         <input type="text" class="form-control" id="codFacultad" name="codFacultad" placeholder="Código Facultad">
