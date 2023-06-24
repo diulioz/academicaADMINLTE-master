@@ -33,7 +33,7 @@
         <td>{{$p->facultad}}</td>
         <td>
             <a class="btn btn-success">Editar</a>
-            <a class="btn btn-danger" href="">Eliminar</a>
+            <a class="btn btn-danger" href="{{route('eliminaProg', $p->codPrograma)}}">Eliminar</a>
         </td>
         </tr>
         @php

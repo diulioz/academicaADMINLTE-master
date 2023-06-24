@@ -26,4 +26,9 @@ class Programas extends Controller
         $programa->save();
         return redirect()->route('listadoProg');
     }
+    public function eliminar($id){
+        $programa = Programa::findOrFail($id);
+        $programa->delete();
+        return redirect()->route('listadoProg');
+    }
 }
