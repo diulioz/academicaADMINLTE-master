@@ -29,4 +29,9 @@ class Facultades extends Controller
         $facultad->delete();
         return redirect()->route('listadoFac');
     }
+
+    // public function actualizar($id){
+    //     $facultad = Facultad::findOrFail($id);
+
+    // }
 }
