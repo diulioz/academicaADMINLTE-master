@@ -32,19 +32,31 @@
             <option value="M">M</option>
             <option value="F">F</option>
         </select>
-</div>
-    
+    </div>
     <div class="mb-3">
         <label for="nombre" class="form-label">Código Ciudad</label>
-        <input type="number" class="form-control" id="ciudad" name="ciudad">
+        <!-- <input type="number" class="form-control" id="ciudad" name="ciudad"> -->
+        <select class="form-select" aria-label="Default select example" name="ciudad">
+        @foreach($ciudad as $c)
+            <option value="{{$c->codCiudad}}">{{$c->codCiudad}}</option>
+        @endforeach
+        </select>
     </div>
     <div class="mb-3">
         <label for="nombre" class="form-label">Código Barrio</label>
-        <input type="number" class="form-control" id="barrio" name="barrio">
+        <select class="form-select" aria-label="Default select example" name="barrio">
+        @foreach($barrio as $b)
+            <option value="{{$b->codBarrio}}">{{$b->codBarrio}}</option>
+        @endforeach
+        </select>
     </div>
     <div class="mb-3">
         <label for="nombre" class="form-label">Código Programa</label>
-        <input type="number" class="form-control" id="programa" name="programa">
+        <select class="form-select" aria-label="Default select example" name="programa">
+        @foreach($programa as $p)
+            <option value="{{$p->codPrograma}}">{{$p->codPrograma}}</option>
+        @endforeach
+        </select>
     </div>
     <button type="submit" class="btn btn-success">Registar</button>
 </form>

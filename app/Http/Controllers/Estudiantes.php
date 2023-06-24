@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB; //HAY QUE PONER SIEMPRE
 use App\Models\Estudiante;  //Siempre se pone y se debe importar donde se vaya a utilizar el modelo
 use App\Models\Ciudad;  //Siempre se pone y se debe importar donde se vaya a utilizar el modelo
+use App\Models\Barrio;  //Siempre se pone y se debe importar donde se vaya a utilizar el modelo
+use App\Models\Programa;  //Siempre se pone y se debe importar donde se vaya a utilizar el modelo
 
 use Illuminate\Http\Request;
 
@@ -15,7 +17,10 @@ class Estudiantes extends Controller
     }
 
     public function form_registro(){
-        return view('estudiantes.form_registro');
+        $ciudad = Ciudad::all();
+        $barrio = Barrio::all();
+        $programa = Programa::all();
+        return view('estudiantes.form_registro',compact('ciudad','barrio','programa'));
     }
 
     public function registrar(Request $r){

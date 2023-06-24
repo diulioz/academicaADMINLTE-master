@@ -18,8 +18,12 @@
         <input type="text" class="form-control" id="nomPrograma" name="nomPrograma" placeholder="Nombre Programa">
     </div>
     <div class="mb-3">
-        <label for="nombre" class="form-label">Código de Facultad</label>
-        <input type="text" class="form-control" id="Facultad" name="Facultad" placeholder="Código Facultad">
+        <label for="nombre" class="form-label">Código Facultad</label>
+        <select class="form-select" aria-label="Default select example" name="Facultad">
+        @foreach($facultad as $f)
+            <option value="{{$f->codFacultad}}">{{$f->codFacultad}}</option>
+        @endforeach
+        </select>
     </div>
     <button type="submit" class="btn btn-success">Registar</button>
 </form>

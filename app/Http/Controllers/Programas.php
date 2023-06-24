@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB; //HAY QUE PONER SIEMPRE
 use App\Models\Programa;  //Siempre se pone y se debe importar donde se vaya a utilizar el modelo
+use App\Models\Facultad;
 
 class Programas extends Controller
 {
@@ -14,7 +15,8 @@ class Programas extends Controller
     }
 
     public function form_registro(){
-        return view('programas.form_registro');
+        $facultad = facultad::all();
+        return view('programas.form_registro',compact('facultad'));
     }
 
     public function registrar(Request $r){
