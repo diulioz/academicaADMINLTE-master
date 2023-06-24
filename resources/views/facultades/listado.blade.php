@@ -32,7 +32,7 @@
         <td>{{$f->codFacultad}}</td>
         <td>{{$f->nomFacultad}}</td>
                 <td>
-                    <a class="btn btn-success">Editar</a>
+                    <a class="btn btn-success" href="{{route('actualizaFac', $f->codFacultad)}}">Editar</a>
                     <a class="btn btn-danger" href="{{route('eliminaFac', $f->codFacultad)}}">Eliminar</a>
                 </td>
             </tr>

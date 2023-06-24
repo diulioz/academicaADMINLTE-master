@@ -30,8 +30,17 @@ class Facultades extends Controller
         return redirect()->route('listadoFac');
     }
 
-    // public function actualizar($id){
-    //     $facultad = Facultad::findOrFail($id);
+    public function form_actualiza($id){
+        $facultad = Facultad::findOrFail($id);
+        return view('facultades.form_actualiza', compact('facultad'));
+    }
 
-    // }
+    public function actualizar(Request $r, $id){
+        $facultad = Facultad::findOrFail($id);
+        $facultad->codFacultad = $r->input('codFacultad'); //en el input se pone el nombre que se puso en name
+        $facultad->nomFacultad = $r->input('nomFacultad');
+        $facultad->save();
+        return redirect()->route('listadoFac'); 
+
+    }
 }
