@@ -18,7 +18,7 @@
         <input type="text" class="form-control" id="nomPrograma" name="nomPrograma" placeholder="Nombre Programa">
     </div>
     <div class="mb-3">
-        <label for="nombre" class="form-label">Código Facultad</label>
+        <label for="nombre" class="form-label">Código Facultad</label><br>
         <select class="form-select" aria-label="Default select example" name="Facultad">
         @foreach($facultad as $f)
             <option value="{{$f->codFacultad}}">{{$f->codFacultad}}</option>
