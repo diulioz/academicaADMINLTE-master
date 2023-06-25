@@ -19,8 +19,28 @@ class ProfesoresSeeder extends Seeder
     {
         $datos = [
             [
-                'codProfesor'=>'10',
+                'codProfesor'=>'13',
                 'nomProfesor'=>'Dario Lopez',
+                'catProfesor'=>'Magister',
+            ],
+            [
+                'codProfesor'=>'14',
+                'nomProfesor'=>'Camila Lopez',
+                'catProfesor'=>'Magister',
+            ],
+            [
+                'codProfesor'=>'15',
+                'nomProfesor'=>'Diana Lopez',
+                'catProfesor'=>'Magister',
+            ],
+            [
+                'codProfesor'=>'16',
+                'nomProfesor'=>'Andres Lopez',
+                'catProfesor'=>'Magister',
+            ],
+            [
+                'codProfesor'=>'17',
+                'nomProfesor'=>'Camilo Lopez',
                 'catProfesor'=>'Magister',
             ]
 

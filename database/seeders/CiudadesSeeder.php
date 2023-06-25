@@ -22,6 +22,26 @@ class CiudadesSeeder extends Seeder
                 'codCiudad'=>'10001',
                 'nomCiudad'=>'Pasto',
                 'departamento'=>'10',
+            ],
+            [
+                'codCiudad'=>'10002',
+                'nomCiudad'=>'Ipiales',
+                'departamento'=>'10',
+            ],
+            [
+                'codCiudad'=>'10003',
+                'nomCiudad'=>'Tuquerres',
+                'departamento'=>'10',
+            ],
+            [
+                'codCiudad'=>'10004',
+                'nomCiudad'=>'Tumaco',
+                'departamento'=>'10',
+            ],
+            [
+                'codCiudad'=>'10005',
+                'nomCiudad'=>'Nariño',
+                'departamento'=>'10',
             ]
 
         ];

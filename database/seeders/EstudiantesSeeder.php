@@ -19,7 +19,7 @@ class EstudiantesSeeder extends Seeder
     {
         $datos = [
             [
-                'codEstudiante' => '3603',
+                'codEstudiante' => '3608',
                 'nomEstudiante' => 'Daniel Lopez',
                 'edadEstudiante' => '23',
                 'fechaEstudiante' => '2000-10-16',
@@ -30,8 +30,19 @@ class EstudiantesSeeder extends Seeder
 
             ],
             [
-                'codEstudiante' => '3601',
+                'codEstudiante' => '3609',
                 'nomEstudiante' => 'Camila Gonzales',
+                'edadEstudiante' => '23',
+                'fechaEstudiante' => '2000-10-16',
+                'sexEstudiante' => 'F',
+                'ciudad' => '10001',
+                'barrio' => '10',
+                'programa' => '36',
+
+            ],
+            [
+                'codEstudiante' => '3610',
+                'nomEstudiante' => 'Pedro Riascos',
                 'edadEstudiante' => '23',
                 'fechaEstudiante' => '2000-10-16',
                 'sexEstudiante' => 'M',
@@ -41,11 +52,22 @@ class EstudiantesSeeder extends Seeder
 
             ],
             [
-                'codEstudiante' => '3602',
-                'nomEstudiante' => 'Pedro Riascos',
+                'codEstudiante' => '3611',
+                'nomEstudiante' => 'Camila Riascos',
                 'edadEstudiante' => '23',
                 'fechaEstudiante' => '2000-10-16',
-                'sexEstudiante' => 'M',
+                'sexEstudiante' => 'F',
+                'ciudad' => '10001',
+                'barrio' => '10',
+                'programa' => '36',
+
+            ],
+            [
+                'codEstudiante' => '3612',
+                'nomEstudiante' => 'Adriana Riascos',
+                'edadEstudiante' => '23',
+                'fechaEstudiante' => '2000-10-16',
+                'sexEstudiante' => 'F',
                 'ciudad' => '10001',
                 'barrio' => '10',
                 'programa' => '36',

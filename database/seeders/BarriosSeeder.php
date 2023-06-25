@@ -23,6 +23,30 @@ class BarriosSeeder extends Seeder
                 'nomBarrio'=>'Pandiaco',
                 'estBarrio'=>'3',
                 'comuna'=>'3',
+            ],
+            [
+                'codBarrio'=>'11',
+                'nomBarrio'=>'Lorenzo',
+                'estBarrio'=>'3',
+                'comuna'=>'2',
+            ],
+            [
+                'codBarrio'=>'12',
+                'nomBarrio'=>'Palermo',
+                'estBarrio'=>'5',
+                'comuna'=>'8',
+            ],
+            [
+                'codBarrio'=>'13',
+                'nomBarrio'=>'Mercedario',
+                'estBarrio'=>'3',
+                'comuna'=>'2',
+            ],
+            [
+                'codBarrio'=>'14',
+                'nomBarrio'=>'Cuadras',
+                'estBarrio'=>'5',
+                'comuna'=>'8',
             ]
 
         ];
