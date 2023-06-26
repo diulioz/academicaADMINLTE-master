@@ -19,7 +19,7 @@ class DepartamentosSeeder extends Seeder
     {
         $datos = [
             [
-                'codDepto'=>'11',
+                'codDepto'=>'10',
                 'nomDepto'=>'Nariño',
             ],
             [
