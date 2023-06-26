@@ -26,7 +26,7 @@ class EstudiantesSeeder extends Seeder
                 'sexEstudiante' => 'M',
                 'ciudad' => '10001',
                 'barrio' => '10',
-                'programa' => '36',
+                'programa' => '20',
 
             ],
             [
@@ -37,7 +37,7 @@ class EstudiantesSeeder extends Seeder
                 'sexEstudiante' => 'F',
                 'ciudad' => '10001',
                 'barrio' => '10',
-                'programa' => '36',
+                'programa' => '20',
 
             ],
             [
@@ -48,7 +48,7 @@ class EstudiantesSeeder extends Seeder
                 'sexEstudiante' => 'M',
                 'ciudad' => '10001',
                 'barrio' => '10',
-                'programa' => '36',
+                'programa' => '20',
 
             ],
             [
@@ -59,7 +59,7 @@ class EstudiantesSeeder extends Seeder
                 'sexEstudiante' => 'F',
                 'ciudad' => '10001',
                 'barrio' => '10',
-                'programa' => '36',
+                'programa' => '20',
 
             ],
             [
@@ -70,7 +70,7 @@ class EstudiantesSeeder extends Seeder
                 'sexEstudiante' => 'F',
                 'ciudad' => '10001',
                 'barrio' => '10',
-                'programa' => '36',
+                'programa' => '20',
 
             ]
 
